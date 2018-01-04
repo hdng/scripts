@@ -1,0 +1,8 @@
+#!/gsc/bin/sh
+
+dir=$1
+if [ $# -eq 0 ]; then
+    dir="."
+fi
+nautilus $dir
+

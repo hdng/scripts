@@ -1,0 +1,6 @@
+#!/gsc/bin/bash
+if [ -z "$2" ];then
+    head -n 1 $1 | tab2nl | cat -n
+else
+    head -n $2 $1 | tail -n 1 | tab2nl | cat -n
+fi
